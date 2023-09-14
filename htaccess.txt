@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#Regra para remover a string da URL do WordPress que informa a personalização do script de update
+RewriteCond %{QUERY_STRING} (^|&)doing_wp_cron=[0-9]+.[0-9]+(&|$) [NC]
+RewriteRule ^ %{REQUEST_URI}? [R=307]
+</IfModule>
