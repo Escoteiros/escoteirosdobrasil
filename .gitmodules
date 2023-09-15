@@ -1,3 +1,6 @@
 [submodule "acf"]
 	path = acf
 	url = https://github.com/AdvancedCustomFields/acf.git
+[submodule "toolbar"]
+	path = toolbar
+	url = https://github.com/Escoteiros/toolbar.git
